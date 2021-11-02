@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>시작 페이지</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossOrigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossOrigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossOrigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        div.banner{
+            width: 1000px;
+            height: 100px;
+            margin: auto;
+            margin-top: 50px;
+            text-align:center;
+            font-family: 'East Sea Dokdo', cursive;
+        }
+
+        div.relative {
+            position: relative;
+            width: 1000px;
+            height: 476px;
+            border: 3px solid #73AD21;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            margin-right: 20px;
+            width: 300px;
+            height: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <h1>감성에 빠진 스트릿</h1>
+    <h2>감빠스</h2>
+</div>
+
+<div class="relative">
+    <img src="/static/index/travel.jpg">
+    <div class="absolute">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="UserID">ID</span>
+            </div>
+            <input type="text" class="form-control" placeholder="ID" aria-label="UserID" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="UserPW">PW</span>
+            </div>
+            <input type="text" class="form-control" placeholder="PW" aria-label="UserID" aria-describedby="basic-addon1">
+        </div>
+
+        <div style="margin-top: 10px;">
+            <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='/api/main'">Login</button>
+        </div>
+
+        <div style="margin-top: 100px;">
+            <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='/api/signup'">Sign up</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
